@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LocalHost.AdventureWorks_DW"
+  DTS:DTSID="{1A48919F-12C4-4445-A04F-AF8AB5A121AC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.;Initial Catalog=AdventureWorks_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-CargaDatawarehouse-{1A48919F-12C4-4445-A04F-AF8AB5A121AC}LocalHost.DW_AdventureWorks;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,1 +1,1 @@
-# AdventureWorksBI
+# BI-AdventureWorksSolution

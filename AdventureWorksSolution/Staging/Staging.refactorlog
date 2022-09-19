@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="58ed8b18-5f34-4188-aea5-780649837ed3" ChangeDateTime="09/09/2022 16:23:22">
+    <Property Name="ElementName" Value="[dbo].[StgSalesOrderHeader].[[OnlineOrderFlag]]]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StgSalesOrderHeader]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OnlineOrderFlag" />
+  </Operation>
+</Operations>

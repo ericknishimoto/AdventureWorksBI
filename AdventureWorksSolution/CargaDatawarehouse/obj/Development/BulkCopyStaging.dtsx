@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/7/2022 9:47:28 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-SUJ80AE"
+  DTS:CreatorName="DESKTOP-SUJ80AE\erick"
+  DTS:DTSID="{DE709AD1-C1BA-45BE-A551-58F4EFCD81D8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{0C058AE9-9856-444D-9387-170F099D698A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\BCP Customer"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{F4C06EAB-BAEA-4E5D-BD5A-9E3D46C8AAD2}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BCP Customer"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bcp.exe"
+          Arguments="AdventureWorks2019.Sales.Customer out &quot;C:\Projetos\AdventureWorksBI\Staging\Sales.Customer.txt&quot; -c -T" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\BCP Person"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{33400b29-300d-4f4b-9183-ac2dba298edd}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BCP Person"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bcp.exe"
+          Arguments="AdventureWorks2019.Person.Person out &quot;C:\Projetos\AdventureWorksBI\Staging\Person.Person.txt&quot; -c -T" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\BCP Product"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{abd54718-74ab-4200-bc3e-5082103d82dd}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BCP Product"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bcp.exe"
+          Arguments="AdventureWorks2019.Production.Product out &quot;C:\Projetos\AdventureWorksBI\Staging\Production.Product.txt&quot; -c -T" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\BCP ProductCategory"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{4627e823-28bd-432c-9ed9-779eade75265}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BCP ProductCategory"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bcp.exe"
+          Arguments="AdventureWorks2019.Production.ProductCategory out &quot;C:\Projetos\AdventureWorksBI\Staging\Production.ProductCategory.txt&quot; -c -T" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\BCP ProductSubcategory"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{b3b6f194-7d63-4e48-8c7e-d816456f61f3}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BCP ProductSubcategory"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bcp.exe"
+          Arguments="AdventureWorks2019.Production.ProductSubcategory out &quot;C:\Projetos\AdventureWorksBI\Staging\Production.ProductSubcategory.txt&quot; -c -T" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\BCP SalesTerritory"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{44f69dc5-8bf8-459b-8f34-b6d02de8b5ba}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BCP SalesTerritory"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bcp.exe"
+          Arguments="AdventureWorks2019.Sales.SalesTerritory out &quot;C:\Projetos\AdventureWorksBI\Staging\Sales.SalesTerritory.txt&quot; -c -T" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\BCP SpecialOfferProduct"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{b5f27ab1-08ef-4e05-9f4f-0efb37a1c2d5}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BCP SpecialOfferProduct"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bcp.exe"
+          Arguments="AdventureWorks2019.Sales.SpecialOfferProduct out &quot;C:\Projetos\AdventureWorksBI\Staging\Sales.SpecialOfferProduct.txt&quot; -c -T" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib">
+        <AnnotationLayout
+          Text="BCP (Bulk Copy Program) das tabelas brutas do OLTP para a pasta &quot;C:\Projetos\AdventureWorksBI\Staging&quot;"
+          ParentId="Package"
+          Size="769,60"
+          Id="9adab2f4-0a17-4e51-9289-0f9682084da8"
+          TopLeft="48,33">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Family="Tahoma"
+              Size="14.25"
+              Color="#FFFFFF00">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+        <NodeLayout
+          Size="193,42"
+          Id="Package\BCP SpecialOfferProduct"
+          TopLeft="13,15" />
+        <GroupLayout
+          Text="DimSpecialOffer"
+          ParentId="Package"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="220,135"
+          Size="220,178"
+          Id="a38d2975-5ba2-4c49-a067-91ce7c59a3b1"
+          TopLeft="572.611111111111,124">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\BCP SpecialOfferProduct</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
+        <NodeLayout
+          Size="133,42"
+          Id="Package\BCP Person"
+          TopLeft="17.5,84.5" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\BCP Customer"
+          TopLeft="17.5,21.5" />
+        <GroupLayout
+          Text="DimCustomer"
+          ParentId="Package"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="223,183"
+          Size="223,226"
+          Id="3d50bcbd-1b85-404f-8b97-3a0ff42dfd78"
+          TopLeft="48.5,124">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\BCP Person</s:String>
+            <s:String>Package\BCP Customer</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
+        <NodeLayout
+          Size="137,42"
+          Id="Package\BCP Product"
+          TopLeft="19.5,16.5" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\BCP ProductSubcategory"
+          TopLeft="19.5,73.25" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\BCP ProductCategory"
+          TopLeft="19.5,137" />
+        <GroupLayout
+          Text="DimProduct"
+          ParentId="Package"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="242,232"
+          Size="242,275"
+          Id="6247d03f-5ea2-46f6-a8dc-61ddb68ae02b"
+          TopLeft="301.055555555556,124">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\BCP Product</s:String>
+            <s:String>Package\BCP ProductSubcategory</s:String>
+            <s:String>Package\BCP ProductCategory</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\BCP SalesTerritory"
+          TopLeft="5.5,5.5" />
+        <GroupLayout
+          Text="DimSalesTerritory"
+          ParentId="Package"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="176,102"
+          Size="176,145"
+          Id="e0122280-eca1-4ab9-ba45-d21fa0f0625e"
+          TopLeft="822.166666666667,124">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\BCP SalesTerritory</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
