@@ -1,8 +1,3 @@
-
-
-
-
-
 # Projeto de BI - Adventure Works 2019
 Este repositório contém arquivos utilizados na construção da solução de Business Intelligence para a empresa Adventure Works (empresa fictícia de fabricação de bicicletas), utilizando principalmente ferramentas de dados e analytics da Microsoft.
 <br>
@@ -56,12 +51,13 @@ O pacote principal do SSIS foi configurado no SQL Server Agent para ser executad
 
 - [x]  **Criação de relatório no Power BI**<br>
 Como o volume de dados era baixo, foi utilizado próprio Power BI como camada de CUBO e também visualização. Todos os dados são importados diretamente do DW, e as medidas e cálculos criados em DAX de acordo com o levantamento de requisitos de negócio. A identidade visual e toda parte de UX e UI, foi baseada em modelos de dashboards relacionados ao tema de Natureza e Aventura. <br>
-[Ver relatório online](https://app.powerbi.com/view?r=eyJrIjoiYTRkOTc2NTYtY2Y0Ny00MTVjLTgyMGYtMTdkYmEyYmY1NDFiIiwidCI6Ijc2ODE4YzFjLWIyMzctNGVjYy1hMGZkLTI5NmI5ODUwNDIwNiJ9&pageName=ReportSection96714d353a93b8c35fe2)
 ![image](https://user-images.githubusercontent.com/25754870/191130346-3c8b2480-da04-41a6-b2b4-0216cf060651.png)![image](https://user-images.githubusercontent.com/25754870/191130152-6d6289ad-fc03-4a9a-a0b0-92c626af9880.png)
+[Ver relatório online](https://app.powerbi.com/view?r=eyJrIjoiYTRkOTc2NTYtY2Y0Ny00MTVjLTgyMGYtMTdkYmEyYmY1NDFiIiwidCI6Ijc2ODE4YzFjLWIyMzctNGVjYy1hMGZkLTI5NmI5ODUwNDIwNiJ9&pageName=ReportSection96714d353a93b8c35fe2)
 
 ## Créditos
 - AdventureWorks sample databases: https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure <br>
 - Inspiração de layout do dashboard: https://dribbble.com/shots/16605185-Company-Cash-Dashboard
+
 ## Contato
 Dúvidas e sugestões, fique à vontade para entrar em contato. <br> <br>
 Linkedin: https://www.linkedin.com/in/ericknishimoto/ <br>
