@@ -54,7 +54,8 @@ O pacote principal do SSIS foi configurado no SQL Server Agent para ser executad
 
 - [x] **Criação de relatório no Power BI**<br>
 Como o volume de dados era baixo, conseguimos utilizar o Power BI como camada de CUBO e visualização. Todos os dados são importados diretamente do DW, e as medidas e cálculos criados em DAX de acordo com o levantamento de requisitos de negócio. A identidade visual e toda parte de UX e UI, foi baseada em modelos de dashboards relacionados ao tema de Natureza e Aventura.
-![image](https://user-images.githubusercontent.com/25754870/191130152-6d6289ad-fc03-4a9a-a0b0-92c626af9880.png)
-  ![image](https://user-images.githubusercontent.com/25754870/191130346-3c8b2480-da04-41a6-b2b4-0216cf060651.png)
+<iframe title="AdventureWorks - Report" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiYTRkOTc2NTYtY2Y0Ny00MTVjLTgyMGYtMTdkYmEyYmY1NDFiIiwidCI6Ijc2ODE4YzFjLWIyMzctNGVjYy1hMGZkLTI5NmI5ODUwNDIwNiJ9&embedImagePlaceholder=true&pageName=ReportSection96714d353a93b8c35fe2" frameborder="0" allowFullScreen="true"></iframe>
+![image](https://user-images.githubusercontent.com/25754870/191130346-3c8b2480-da04-41a6-b2b4-0216cf060651.png)
+
 ## Dúvidas
 Envie perguntas por e-mail para: [erick.nishimoto@gmail.com](mailto:erick.nishimoto@gmail.com) .
